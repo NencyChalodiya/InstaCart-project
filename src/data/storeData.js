@@ -1,5 +1,3 @@
-
-
 export const storesData = [
   {
     id: 1,

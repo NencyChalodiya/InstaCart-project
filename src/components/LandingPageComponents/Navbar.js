@@ -3,12 +3,37 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
 import Sidebar from "./Sidebar";
 import { RxCross2 } from "react-icons/rx";
+import Login from "../../pages/Login";
+import Signup from "../../pages/Signup";
 
 const Navbar = () => {
   const [open, isOpen] = useState(false);
+  const [login, isLogin] = useState(false);
+  const [signup, isSignup] = useState(false);
+
+  const onClickLogin = () => {
+  
+    isSignup(!signup);
+    isLogin(!login);
+  };
+
   const onToggleButton = () => {
     isOpen(!open);
   };
+
+  const onLoginButton = () => {
+    isLogin(!login);
+  };
+
+  const onSignupHandler = () => {
+    isSignup(!signup);
+  };
+
+  const onCancelHandler = () => {
+    isLogin(false);
+    isSignup(false);
+  };
+
   return (
     <div className="fixed top-0 z-10 w-full bg-white">
       <header className="flex items-center justify-between pt-1 pb-1 border-gray-300 px-25 ">
@@ -17,12 +42,12 @@ const Navbar = () => {
             {open ? (
               <RxCross2
                 onClick={onToggleButton}
-                className="w-[24px] h-[24px] cursor-pointer"
+                className="w-[24px] h-[24px] cursor-pointer "
               />
             ) : (
               <GiHamburgerMenu
                 onClick={onToggleButton}
-                className="w-[24px] h-[24px] cursor-pointer"
+                className="w-[24px] h-[24px] cursor-pointer ml-2"
               />
             )}
           </div>
@@ -49,18 +74,34 @@ const Navbar = () => {
         </div>
         <div className="flex ">
           <button className="relative px-1 py-6 mx-6 text-base font-medium text-gray-700 bg-transparent border-none cursor-pointer">
-            <span className="block overflow-hidden whitespace-nowrap overflow-ellipsis">
+            <span
+              className="block overflow-hidden whitespace-nowrap overflow-ellipsis"
+              onClick={onLoginButton}
+            >
               Log in
             </span>
           </button>
           <button className="bg-green-600 text-white border-none rounded-md px-[8px] py-[16px] m-4 cursor-pointer">
-            <span className="block overflow-hidden whitespace-nowrap overflow-ellipsis">
+            <span
+              className="block overflow-hidden whitespace-nowrap overflow-ellipsis"
+              onClick={onSignupHandler}
+            >
               Sign Up
             </span>
           </button>
         </div>
       </header>
       <Sidebar open={open} onToggleButton={onToggleButton} />
+      <Login
+        login={login}
+        onCancel={onCancelHandler}
+        onClickSignup={onClickLogin}
+      />
+      <Signup
+        signup={signup}
+        onCancel={onCancelHandler}
+        onClickLogin={onClickLogin}
+      />
     </div>
   );
 };
