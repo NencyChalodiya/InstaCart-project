@@ -3,36 +3,39 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { CiSearch } from "react-icons/ci";
 import Sidebar from "./Sidebar";
 import { RxCross2 } from "react-icons/rx";
-import Login from "../../pages/Login";
-import Signup from "../../pages/Signup";
 
-const Navbar = () => {
+
+
+
+const Navbar = ({ onLoginButton, onSignupHandler }) => {
   const [open, isOpen] = useState(false);
-  const [login, isLogin] = useState(false);
-  const [signup, isSignup] = useState(false);
-
-  const onClickLogin = () => {
-  
-    isSignup(!signup);
-    isLogin(!login);
-  };
+  // const [login, isLogin] = useState(false);
+  // const [signup, isSignup] = useState(false);
+  // const [resetPassword, isResetpassword] = useState(false);
+  // const onClickLogin = () => {
+  //   isSignup(!signup);
+  //   // isLogin(!login);
+  // };
 
   const onToggleButton = () => {
     isOpen(!open);
   };
 
-  const onLoginButton = () => {
-    isLogin(!login);
-  };
+  // const onLoginButton = () => {
+  //   isLogin(!login);
+  // };
 
-  const onSignupHandler = () => {
-    isSignup(!signup);
-  };
-
-  const onCancelHandler = () => {
-    isLogin(false);
-    isSignup(false);
-  };
+  // const onSignupHandler = () => {
+  //   isSignup(!signup);
+  // };
+  // const onResetpasswordHandler = () => {
+  //   isLogin(false);
+  //   // isResetpassword(true);
+  // };
+  // const onCancelHandler = () => {
+  //   // isLogin(false);
+  //   isSignup(false);
+  // };
 
   return (
     <div className="fixed top-0 z-10 w-full bg-white">
@@ -92,16 +95,20 @@ const Navbar = () => {
         </div>
       </header>
       <Sidebar open={open} onToggleButton={onToggleButton} />
-      <Login
-        login={login}
-        onCancel={onCancelHandler}
-        onClickSignup={onClickLogin}
-      />
-      <Signup
+      {/* {login && (
+        <Login
+          login={login}
+          onCancel={onCancelHandler}
+          onClickSignup={onClickLogin}
+          onResetpasswordHandler={onResetpasswordHandler}
+        />
+      )} */}
+      {/* <Signup
         signup={signup}
         onCancel={onCancelHandler}
         onClickLogin={onClickLogin}
-      />
+      /> */}
+      {/* {resetPassword && <ResetPassword resetPassword={resetPassword} />} */}
     </div>
   );
 };

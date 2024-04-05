@@ -2,8 +2,8 @@ import { Modal } from "antd";
 import React  from "react";
 import { BsTelephoneForwardFill } from "react-icons/bs";
 
-const Login = ({ login, onCancel, onClickSignup}) => {
-  
+const Login = ({ login, onCancel, onClickSignup, onResetpasswordHandler }) => {
+ 
   return (
     <>
       <Modal
@@ -54,7 +54,7 @@ const Login = ({ login, onCancel, onClickSignup}) => {
                         name="email"
                         placeholder="Email"
                         className="w-full h-full p-5 text-base leading-6 bg-transparent border-none rounded-lg"
-                      />
+                      ></input>
                     </div>
                   </div>
                 </div>
@@ -76,7 +76,7 @@ const Login = ({ login, onCancel, onClickSignup}) => {
                     Forgot Passord?{" "}
                     <button
                       className="relative inline-flex text-green-600 cursor-pointer "
-                     
+                      onClick={() => onResetpasswordHandler()}
                     >
                       <span className="block font-medium">Reset it</span>
                     </button>
@@ -112,7 +112,6 @@ const Login = ({ login, onCancel, onClickSignup}) => {
           </div>
         </div>
       </Modal>
-    
     </>
   );
 };

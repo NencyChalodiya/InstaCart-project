@@ -1,6 +1,6 @@
 import React from "react";
 import { MdElectricBolt } from "react-icons/md";
-const StoreList = ({store}) => {
+const StoreList = ({ store }) => {
   return (
     <>
       <li>
