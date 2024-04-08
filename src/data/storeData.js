@@ -5,6 +5,120 @@ export const storesData = [
     title: "Safeway",
     deliveryTime: "Delivery by 11:00pm",
     description: "Accepts EBT",
+    items: [
+      {
+        id: 1,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 2,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 3,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 4,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 5,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 6,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 7,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+      {
+        id: 8,
+        itemsImg: (
+          <img
+            srcset="https://www.instacart.com/image-server/197x197/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg, https://www.instacart.com/image-server/296x296/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 1.5x, https://www.instacart.com/image-server/394x394/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 2x, https://www.instacart.com/image-server/591x591/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 3x, https://www.instacart.com/image-server/788x788/filters:fill(FFF,true):format(jpg)/d2lnr5mha7bycj.cloudfront.net/product-image/file/large_4c81b683-1860-4d45-a66e-c5d19c8085ae.jpeg 4x"
+            alt=""
+            class="e-by6b4l"
+          />
+        ),
+        itemName: "Banana",
+        itemWeight: "$1.09/lb",
+        itemDesc: "About 0.4lb each",
+        itemsPrice: "$047 each (est)",
+      },
+    ],
   },
   {
     id: 2,

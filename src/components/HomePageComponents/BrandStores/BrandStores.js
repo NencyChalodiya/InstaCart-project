@@ -1,6 +1,10 @@
 import React from "react";
+import { useParams } from "react-router-dom";
 import { storesData } from "../../../data/storeData";
+import { Link } from "react-router-dom";
 const BrandStores = () => {
+  const { id } = useParams();
+  console.log(id);
   return (
     <>
       <div className="mt-44">
@@ -11,10 +15,17 @@ const BrandStores = () => {
                 <li>
                   <div className="w-[116px] text-center">
                     <div className="pl-3 pr-3">
-                      <a href="/" className="relative block">
+                      <Link
+                        to={`/store/${items.id}`}
+                        className="relative block"
+                      >
                         <div>
                           <span className="relative flex justify-center pt-1 pb-1 bg-white border rounded-lg">
-                            <img src={items.img} className="block " />
+                            <img
+                              src={items.img}
+                              alt="store-brand-img"
+                              className="block "
+                            />
                           </span>
                           <div className="text-center mt-2 mr-[-7px] ml-[-7px] overflow-hidden text-sm font-medium">
                             {items.title}
@@ -27,12 +38,12 @@ const BrandStores = () => {
                             </span>
                           </div>
                         </div>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </li>
               ))}
-              <a href="#" className="text-center w-[116px] relative ml-4">
+              <a href="/" className="text-center w-[116px] relative ml-4">
                 <div className="pt-3">
                   <div className="rounded-[50%] items-center justify-center flex w-12 h-12 bg-[#343538]">
                     <svg

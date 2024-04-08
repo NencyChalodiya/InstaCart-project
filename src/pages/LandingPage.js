@@ -62,7 +62,7 @@ const Home = () => {
       {signUpModal && (
         <Signup
           signup={signUpModal}
-          onCancel={() => signUpModal(false)}
+          onCancel={() => setSignUpModal(false)}
           onClickLogin={() => {
             setSignUpModal(false);
             setLoginModal(true);
