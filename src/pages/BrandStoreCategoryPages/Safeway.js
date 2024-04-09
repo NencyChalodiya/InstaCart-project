@@ -408,7 +408,7 @@ const Safeway = () => {
                           </li>
                         ))
                       ) : (
-                        <div>Loading</div>
+                        <div>Loading...</div>
                       )}
                     </ul>
                   </div>
