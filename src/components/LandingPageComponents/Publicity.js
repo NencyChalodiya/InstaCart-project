@@ -1,5 +1,5 @@
 import React from "react";
-import { publicity } from "../../data/storeData";
+import { publicity } from "../../data/publicity";
 const Publicity = () => {
   return (
     <div className="flex flex-col items-center justify-center max-w-6xl p-8 m-auto ">
@@ -16,18 +16,16 @@ const Publicity = () => {
         </div>
 
         <div className="flex-col w-full">
-         
-            {publicity.map((item) => (
-               <div className="flex flex-col flex-grow flex-shrink mb-4 bg-gray-100 border rounded-2xl">
+          {publicity.map((item) => (
+            <div className="flex flex-col flex-grow flex-shrink mb-4 bg-gray-100 border rounded-2xl">
               <div className="flex-grow flex-shrink block p-8 ">
                 <h3 className="text-3xl font-extrabold text-left">
                   {item.title}
                 </h3>
                 <p className="mt-6 text-xl fontsnap-normal">{item.descr}</p>
               </div>
-              </div>
-            ))}
-          
+            </div>
+          ))}
         </div>
       </div>
     </div>

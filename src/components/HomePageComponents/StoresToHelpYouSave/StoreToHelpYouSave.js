@@ -1,7 +1,7 @@
 import React from "react";
 import StoreList from "../../LandingPageComponents/StoreList";
 import { MdElectricBolt } from "react-icons/md";
-import { storesData } from "../../../data/storeData";
+import { brandStoresData } from "../../../BrandStoreData/brandStoreData";
 const StoreToHelpYouSave = () => {
   return (
     <div className=" max-w-7xl mx-52">
@@ -20,7 +20,7 @@ const StoreToHelpYouSave = () => {
         </div>
         <div>
           <ul className="grid justify-center w-full grid-cols-2 gap-6 px-0 py-8 m-0 lg:grid-cols-3 max-w-7xl">
-            {storesData.map((store) => (
+            {brandStoresData.map((store) => (
               <li>
                 <div className="h-full">
                   <div className="relative flex flex-row items-center h-full p-3 border rounded-lg flex-nowrap">

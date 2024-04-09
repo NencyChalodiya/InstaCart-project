@@ -1,5 +1,6 @@
 import React from "react";
-import { groceryDelivery } from "../../data/storeData";
+import { groceryDelivery } from "../../data/groceryDelivery";
+
 const GroceryDelivery = () => {
   return (
     <>

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { storesData } from "../../../data/storeData";
+import { brandStoresData } from "../../../BrandStoreData/brandStoreData";
 import { Link } from "react-router-dom";
 const BrandStores = () => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const BrandStores = () => {
         <div className=" max-w-7xl">
           <div className="mb-8">
             <ul className="flex justify-between mx-52">
-              {storesData.map((items) => (
+              {brandStoresData.map((items) => (
                 <li>
                   <div className="w-[116px] text-center">
                     <div className="pl-3 pr-3">

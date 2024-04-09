@@ -4,7 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { IoLocationSharp } from "react-icons/io5";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { FaShoppingCart } from "react-icons/fa";
-import { storeDetailLogo } from "../../../data/storeData";
+import { storeDetailLogo } from "../../../data/storeDetailLogo";
 import Carousel from "@itseasy21/react-elastic-carousel";
 import "./Header.css";
 import StoreSidebar from "../StoreSidebar.js/StoreSidebar";

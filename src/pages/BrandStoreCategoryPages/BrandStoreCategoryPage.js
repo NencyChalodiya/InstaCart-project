@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { storesData } from "../../data/storeData";
+import { brandStoresData } from "../../BrandStoreData/brandStoreData";
 
 import Navbar from "../../components/LandingPageComponents/Navbar";
 
-const Safeway = () => {
+const BrandStoreCategoryPage = () => {
   const recipes = [
     "Recipes",
     "Snacks & Candy",
@@ -28,17 +28,19 @@ const Safeway = () => {
     "Dry Goods & Pasta",
   ];
   const [storeData, setstoreData] = useState(null);
+  const [brandsStoreLogo, setbrandsStoreLogo] = useState(null);
   const params = useParams();
   console.log(params);
 
   useEffect(() => {
-    storesData.map((d) => {
+    brandStoresData.map((d) => {
       if (d.id == params.storeId) {
         setstoreData(d);
+        setbrandsStoreLogo(d);
       }
     });
   }, [params]);
-  console.log(storeData);
+  // console.log(storeData);
   return (
     <>
       <Navbar />
@@ -49,15 +51,25 @@ const Safeway = () => {
         >
           <div className="sticky bg-white z-1 will-change-transform backdrop-blur-sm">
             <div className="flex flex-col items-center px-1 pt-6 pb-4 text-center flex-nowrap">
-              <div className="relative">
-                <a href="/" className="flex flex-col items-center no-underline">
-                  <img
-                    src="https://www.instacart.com/image-server/88x88/www.instacart.com/assets/domains/warehouse/logo/1/1fe0065e-a947-4b5d-b274-3900694536d5.png"
-                    className="w-auto h-20 border-2 rounded-full aspect-square"
-                  />
-                  <h2 className="mt-1 text-xl leading-5">Safeway</h2>
-                </a>
-              </div>
+              {brandsStoreLogo ? (
+                <div className="relative">
+                  <a
+                    href="/"
+                    className="flex flex-col items-center no-underline"
+                  >
+                    <img
+                      src={brandsStoreLogo.img}
+                      className="w-auto h-20 border-2 rounded-full aspect-square"
+                    />
+                    <h2 className="mt-1 text-xl leading-5">
+                      {brandsStoreLogo.title}
+                    </h2>
+                  </a>
+                </div>
+              ) : (
+                <div>Loading...</div>
+              )}
+
               <a
                 href="/"
                 className="relative flex items-center mt-1 text-sm leading-4 text-gray-400"
@@ -100,7 +112,7 @@ const Safeway = () => {
                       d="M14.534 4.201 12 2 9.466 4.201 6.122 3.91l-.756 3.27-2.877 1.73L3.8 12l-1.31 3.09 2.877 1.73.756 3.27 3.344-.291L12 22l2.534-2.201 3.344.291.756-3.27 2.876-1.73L20.2 12l1.31-3.09-2.876-1.73-.756-3.27zM11.1 15.604l5.847-5.858-1.416-1.412-4.474 4.482-2.373-2.234-1.37 1.456z"
                     ></path>
                   </svg>
-                  <p className="text-sm leading-4 text-blue-500">
+                  <p className="text-sm leading-4 text-[#3C84CA]">
                     100% satisfaction guarantee
                   </p>
                   <svg
@@ -422,4 +434,4 @@ const Safeway = () => {
   );
 };
 
-export default Safeway;
+export default BrandStoreCategoryPage;
